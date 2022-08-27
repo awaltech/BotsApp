@@ -22,11 +22,11 @@ process.env.DATABASE_URL = process.env.DATABASE_URL === undefined ? './BotsApp.d
 process.env.DEBUG = process.env.DEBUG === undefined ? 'false' : process.env.DEBUG;
 
 const config = {
-    NEWS_API_URL: process.env.NEWS_API_URL === undefined ? "http://43.204.197.96:8080/" : process.env.NEWS_API_URL,
+    NEWS_API_URL: process.env.NEWS_API_URL === undefined ? "https://botsapp-y2020.herokuapp.com/" : process.env.NEWS_API_URL,
     STRING_SESSION: process.env.STRING_SESSION === undefined ? '' : process.env.STRING_SESSION,
     HEROKU: process.env.HEROKU === undefined ? false : true,
     PREFIX: process.env.PREFIX === undefined ? "^[.?!]" : process.env.PREFIX,
-    COUNTRY_CODE: process.env.COUNTRY_CODE === undefined ? "91" : process.env.COUNTRY_CODE,
+    COUNTRY_CODE: process.env.COUNTRY_CODE === undefined ? "967" : process.env.COUNTRY_CODE,
     OCR_API_KEY: process.env.OCR_API_KEY === undefined ? "9ffb44def388957" : process.env.OCR_API_KEY,
     WEATHER_API_KEY:
         process.env.CURRENT_WEATHER_API_KEY === undefined
